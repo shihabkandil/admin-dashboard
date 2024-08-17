@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../app_text_styles.dart';
 import 'app_colors.dart';
 
 class AppThemeData {
@@ -10,6 +9,7 @@ class AppThemeData {
     primaryColor: AppColors.primaryColor,
     primaryColorDark: AppColors.primaryColorDark,
     scaffoldBackgroundColor: AppColors.backgroundColor,
+    focusColor: Colors.white,
     appBarTheme: const AppBarTheme(
       color: AppColors.primaryColor,
       iconTheme: IconThemeData(color: AppColors.onPrimaryColor),
