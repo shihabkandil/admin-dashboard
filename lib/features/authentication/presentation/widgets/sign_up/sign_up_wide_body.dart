@@ -44,10 +44,7 @@ class SignUpWideBody extends StatelessWidget {
                 style: context.textTheme.titleSmall,
               ),
               12.verticalSpace,
-              const SizedBox(
-                width: 400,
-                child: SignUpForm(),
-              ),
+              const SignUpForm(),
               12.verticalSpace,
               Text(
                 "Designed by Simmmple & Creative Tim",
