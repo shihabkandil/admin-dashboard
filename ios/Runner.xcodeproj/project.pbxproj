@@ -423,7 +423,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		19611FE82C3F38EF00F741F3 /* Debug-dev */ = {
+		194BB7082C714B39008CEF6E /* Debug-dev */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -480,7 +480,7 @@
 			};
 			name = "Debug-dev";
 		};
-		19611FE92C3F38EF00F741F3 /* Debug-dev */ = {
+		194BB7092C714B39008CEF6E /* Debug-dev */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
 			buildSettings = {
@@ -489,14 +489,14 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = 6F5Y3M4BHC;
 				ENABLE_BITCODE = NO;
-				FLUTTER_TARGET = lib/main_dev.dart;
+				FLUTTER_TARGET = lib/main_prod.dart;
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.flutter-app-template.dev";
-				PRODUCT_NAME = "Template Dev";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.flutter-app-template";
+				PRODUCT_NAME = Template;
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -504,7 +504,7 @@
 			};
 			name = "Debug-dev";
 		};
-		19611FEA2C3F38EF00F741F3 /* Debug-dev */ = {
+		194BB70A2C714B39008CEF6E /* Debug-dev */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4117E90BEE6EB2A438842018 /* Pods-RunnerTests.debug-dev.xcconfig */;
 			buildSettings = {
@@ -522,7 +522,7 @@
 			};
 			name = "Debug-dev";
 		};
-		19611FEB2C3F390000F741F3 /* Release-dev */ = {
+		194BB70B2C714B41008CEF6E /* Release-dev */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -576,7 +576,7 @@
 			};
 			name = "Release-dev";
 		};
-		19611FEC2C3F390000F741F3 /* Release-dev */ = {
+		194BB70C2C714B41008CEF6E /* Release-dev */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
@@ -585,21 +585,21 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = 6F5Y3M4BHC;
 				ENABLE_BITCODE = NO;
-				FLUTTER_TARGET = lib/main_dev.dart;
+				FLUTTER_TARGET = lib/main_prod.dart;
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.flutter-app-template.dev";
-				PRODUCT_NAME = "Template Dev";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.flutter-app-template";
+				PRODUCT_NAME = Template;
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = "Release-dev";
 		};
-		19611FED2C3F390000F741F3 /* Release-dev */ = {
+		194BB70D2C714B41008CEF6E /* Release-dev */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 787E8B813BE0F857B3679814 /* Pods-RunnerTests.release-dev.xcconfig */;
 			buildSettings = {
@@ -615,7 +615,7 @@
 			};
 			name = "Release-dev";
 		};
-		19611FEE2C3F390600F741F3 /* Profile-dev */ = {
+		194BB70E2C714B47008CEF6E /* Profile-dev */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -667,7 +667,7 @@
 			};
 			name = "Profile-dev";
 		};
-		19611FEF2C3F390600F741F3 /* Profile-dev */ = {
+		194BB70F2C714B47008CEF6E /* Profile-dev */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
@@ -676,21 +676,21 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = 6F5Y3M4BHC;
 				ENABLE_BITCODE = NO;
-				FLUTTER_TARGET = lib/main_dev.dart;
+				FLUTTER_TARGET = lib/main_prod.dart;
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.flutter-app-template.dev";
-				PRODUCT_NAME = "Template Dev";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.flutter-app-template";
+				PRODUCT_NAME = Template;
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = "Profile-dev";
 		};
-		19611FF02C3F390600F741F3 /* Profile-dev */ = {
+		194BB7102C714B47008CEF6E /* Profile-dev */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DCCA8FFDCCFB007B36D31AEA /* Pods-RunnerTests.profile-dev.xcconfig */;
 			buildSettings = {
@@ -996,11 +996,11 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				331C8088294A63A400263BE5 /* Debug */,
-				19611FEA2C3F38EF00F741F3 /* Debug-dev */,
+				194BB70A2C714B39008CEF6E /* Debug-dev */,
 				331C8089294A63A400263BE5 /* Release */,
-				19611FED2C3F390000F741F3 /* Release-dev */,
+				194BB70D2C714B41008CEF6E /* Release-dev */,
 				331C808A294A63A400263BE5 /* Profile */,
-				19611FF02C3F390600F741F3 /* Profile-dev */,
+				194BB7102C714B47008CEF6E /* Profile-dev */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1009,11 +1009,11 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				97C147031CF9000F007C117D /* Debug */,
-				19611FE82C3F38EF00F741F3 /* Debug-dev */,
+				194BB7082C714B39008CEF6E /* Debug-dev */,
 				97C147041CF9000F007C117D /* Release */,
-				19611FEB2C3F390000F741F3 /* Release-dev */,
+				194BB70B2C714B41008CEF6E /* Release-dev */,
 				249021D3217E4FDB00AE95B9 /* Profile */,
-				19611FEE2C3F390600F741F3 /* Profile-dev */,
+				194BB70E2C714B47008CEF6E /* Profile-dev */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1022,11 +1022,11 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				97C147061CF9000F007C117D /* Debug */,
-				19611FE92C3F38EF00F741F3 /* Debug-dev */,
+				194BB7092C714B39008CEF6E /* Debug-dev */,
 				97C147071CF9000F007C117D /* Release */,
-				19611FEC2C3F390000F741F3 /* Release-dev */,
+				194BB70C2C714B41008CEF6E /* Release-dev */,
 				249021D4217E4FDB00AE95B9 /* Profile */,
-				19611FEF2C3F390600F741F3 /* Profile-dev */,
+				194BB70F2C714B47008CEF6E /* Profile-dev */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
