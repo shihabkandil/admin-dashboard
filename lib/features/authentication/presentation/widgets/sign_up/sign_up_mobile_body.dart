@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
+import 'package:flutter_app_template/features/authentication/presentation/widgets/sign_in/sign_in_form.dart';
 
 import '../../../../../gen/assets.gen.dart';
-import 'sign_up_form.dart';
 
 class SignUpMobileBody extends StatelessWidget {
   const SignUpMobileBody({super.key});
@@ -14,7 +14,7 @@ class SignUpMobileBody extends StatelessWidget {
         Assets.images.banner.image(fit: BoxFit.fill),
         const Padding(
           padding: EdgeInsets.all(16.0),
-          child: SignUpForm(),
+          child: SignInForm(),
         ),
       ],
     );

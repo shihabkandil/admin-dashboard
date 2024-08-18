@@ -2,7 +2,6 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-import '../constants/theme/app_colors.dart';
 import 'diagonal_gradient_border_painter.dart';
 
 class DiagonalBorderBox extends StatelessWidget {
@@ -19,14 +18,14 @@ class DiagonalBorderBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomPaint(
       painter: DiagonalGradientBorderPainter(
-        borderWidth: 2,
+        borderWidth: 1.25,
         gradient: LinearGradient(
           colors: [
-            Colors.grey.shade400,
-            AppColors.primaryColor.withOpacity(1),
-            Colors.grey.shade400,
+            const Color(0xff582CFF).withOpacity(0.8),
+            Colors.grey.withOpacity(0.45),
+            const Color(0xff582CFF).withOpacity(0.8),
           ],
-          transform: const GradientRotation(pi / 3),
+          transform: const GradientRotation(pi / 4),
         ),
         radius: radius,
       ),

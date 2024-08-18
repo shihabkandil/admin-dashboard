@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../sign_in/sign_in_form.dart';
 import '../../../../../common/extensions/widgets_extensions.dart';
 import '../../../../../common/constants/theme/app_theme_data.dart';
 import '../../../../../gen/assets.gen.dart';
-import 'sign_up_form.dart';
 
 class SignUpWideBody extends StatelessWidget {
   const SignUpWideBody({super.key});
@@ -36,30 +36,30 @@ class SignUpWideBody extends StatelessWidget {
           ),
         ),
         Expanded(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Spacer(),
-              Text(
-                "Welcome!",
-                style: context.textTheme.titleSmall,
+          child: Center(
+            child: SizedBox(
+              width: 350,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Spacer(),
+                  const SignInForm(),
+                  12.verticalSpace,
+                  const Spacer(),
+                  Text(
+                    "Designed by Simmmple & Creative Tim",
+                    style: context.textTheme.bodySmall,
+                  ),
+                  Text(
+                    "@2024, Developed by Shihab Kandil",
+                    style: context.textTheme.bodySmall?.copyWith(
+                      color: Colors.blue,
+                    ),
+                  ),
+                  20.verticalSpace,
+                ],
               ),
-              12.verticalSpace,
-              const SignUpForm(),
-              12.verticalSpace,
-              const Spacer(),
-              Text(
-                "Designed by Simmmple & Creative Tim",
-                style: context.textTheme.bodySmall,
-              ),
-              Text(
-                "@2024, Developed by Shihab Kandil",
-                style: context.textTheme.bodySmall?.copyWith(
-                  color: Colors.blue,
-                ),
-              ),
-              20.verticalSpace,
-            ],
+            ),
           ),
         )
       ],
