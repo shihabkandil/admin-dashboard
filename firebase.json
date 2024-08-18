@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "build/web",
+    "site": "flutter-vision-dashboard",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
