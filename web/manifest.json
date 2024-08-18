@@ -1,11 +1,11 @@
 {
-    "name": "admin_dashboard",
-    "short_name": "admin_dashboard",
+    "name": "Vision UI dashboard",
+    "short_name": "Vision UI dashboard",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Vision dashboard UI template",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
