@@ -1,4 +1,4 @@
-# Flutter App Template
+# Vision UI template admin dashboard
 
 ## Getting Started
 
@@ -7,7 +7,7 @@ Follow these steps to get started with the Flutter Template Application:
 1. **Clone the Repository**: Clone this repository to your local machine.
 
     ```bash
-    git clone <YOUR_REPOSITORY_URL>
+    git clone <https://github.com/shihabkandil/admin_dashboard>
     ```
 
 2. **Install Dependencies**: Navigate into the cloned directory and install the required dependencies.
