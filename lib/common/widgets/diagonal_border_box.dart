@@ -19,11 +19,11 @@ class DiagonalBorderBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomPaint(
       painter: DiagonalGradientBorderPainter(
-        borderWidth: 1.25,
+        borderWidth: 2,
         gradient: LinearGradient(
           colors: [
             Colors.grey.shade400,
-            AppColors.primaryColor.withOpacity(0.5),
+            AppColors.primaryColor.withOpacity(1),
             Colors.grey.shade400,
           ],
           transform: const GradientRotation(pi / 3),

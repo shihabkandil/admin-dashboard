@@ -39,6 +39,7 @@ class SignUpWideBody extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              const Spacer(),
               Text(
                 "Welcome!",
                 style: context.textTheme.titleSmall,
@@ -46,16 +47,18 @@ class SignUpWideBody extends StatelessWidget {
               12.verticalSpace,
               const SignUpForm(),
               12.verticalSpace,
+              const Spacer(),
               Text(
                 "Designed by Simmmple & Creative Tim",
-                style: context.textTheme.bodyMedium,
+                style: context.textTheme.bodySmall,
               ),
               Text(
                 "@2024, Developed by Shihab Kandil",
-                style: context.textTheme.bodyMedium?.copyWith(
-                  color: Colors.red,
+                style: context.textTheme.bodySmall?.copyWith(
+                  color: Colors.blue,
                 ),
               ),
+              20.verticalSpace,
             ],
           ),
         )

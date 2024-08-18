@@ -46,7 +46,8 @@ class AppTextFormField extends StatelessWidget {
               isDense: true,
             ),
             style: context.textTheme.bodyMedium,
-            onTapOutside: (event) => Focus.of(context).unfocus(),
+            onTapOutside: (event) =>
+                FocusManager.instance.primaryFocus?.unfocus(),
             onChanged: onChanged,
             onFieldSubmitted: onSubmitted,
           ),
