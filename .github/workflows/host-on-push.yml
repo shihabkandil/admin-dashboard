@@ -38,4 +38,6 @@ jobs:
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FIR_ADMIN_DASHBOARD_D35D8 }}
+          channelId: live
+          target: flutter-vision-dashboard
           projectId: fir-admin-dashboard-d35d8
