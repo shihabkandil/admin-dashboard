@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-import 'sign_in/sign_in_form.dart';
+import 'auth_animated_switcher.dart';
 import '../../../../gen/assets.gen.dart';
 
 class AuthMobileBody extends StatelessWidget {
@@ -14,7 +14,7 @@ class AuthMobileBody extends StatelessWidget {
         Assets.images.banner.image(fit: BoxFit.fill),
         const Padding(
           padding: EdgeInsets.all(16.0),
-          child: SignInForm(),
+          child: AuthAnimatedSwitcher(),
         ),
       ],
     );

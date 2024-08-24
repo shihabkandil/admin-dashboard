@@ -1,6 +1,8 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../cubits/auth_switcher_cubit/auth_switcher_cubit.dart';
 import '../../../../common/constants/theme/app_colors.dart';
 import '../../../../common/presentation/widgets/responsive_builder.dart';
 import '../widgets/auth_mobile_body.dart';
@@ -12,18 +14,21 @@ class AuthScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Material(
+    return Material(
       child: DecoratedBox(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: AppColors.backgroundColors,
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
           ),
         ),
-        child: ResponsiveWidget(
-          wideScreen: AuthWideBody(),
-          mobileScreen: SignUpMobileBody(),
+        child: BlocProvider(
+          create: (context) => AuthSwitcherCubit(),
+          child: const ResponsiveWidget(
+            wideScreen: AuthWideBody(),
+            mobileScreen: AuthMobileBody(),
+          ),
         ),
       ),
     );
