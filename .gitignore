@@ -54,3 +54,6 @@ app.*.map.json
 /lib/common/core/router/app_router.gr.dart
 /lib/common/core/injector/locator.config.dart
 /lib/gen/assets.gen.dart
+
+
+pubspec.lock
