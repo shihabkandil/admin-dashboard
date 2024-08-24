@@ -2,13 +2,13 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../common/constants/theme/app_colors.dart';
-import '../../../../common/widgets/responsive_builder.dart';
-import '../widgets/sign_up/sign_up_mobile_body.dart';
-import '../widgets/sign_up/sign_up_wide_body.dart';
+import '../../../../common/presentation/widgets/responsive_builder.dart';
+import '../widgets/auth_mobile_body.dart';
+import '../widgets/auth_wide_body.dart';
 
 @RoutePage()
-class SignUpScreen extends StatelessWidget {
-  const SignUpScreen({super.key});
+class AuthScreen extends StatelessWidget {
+  const AuthScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class SignUpScreen extends StatelessWidget {
           ),
         ),
         child: ResponsiveWidget(
-          wideScreen: SignUpWideBody(),
+          wideScreen: AuthWideBody(),
           mobileScreen: SignUpMobileBody(),
         ),
       ),

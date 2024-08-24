@@ -1,10 +1,10 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_app_template/features/authentication/presentation/widgets/sign_in/sign_in_form.dart';
 
-import '../../../../../gen/assets.gen.dart';
+import 'sign_in/sign_in_form.dart';
+import '../../../../gen/assets.gen.dart';
 
-class SignUpMobileBody extends StatelessWidget {
-  const SignUpMobileBody({super.key});
+class AuthMobileBody extends StatelessWidget {
+  const AuthMobileBody({super.key});
 
   @override
   Widget build(BuildContext context) {
