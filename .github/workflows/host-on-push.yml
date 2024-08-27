@@ -31,6 +31,9 @@ jobs:
       - name: Run generators
         run: flutter pub run build_runner build
 
+      - name: Generate Localizations
+        run: flutter gen-l10n
+
       - name: Build Flutter web app
         run: flutter build web --release --target=lib/main_prod.dart
 
