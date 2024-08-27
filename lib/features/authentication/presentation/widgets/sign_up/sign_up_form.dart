@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../common/constants/theme/app_theme_data.dart';
+import '../../../../../common/extensions/context_extensions.dart';
 import '../../../../../common/extensions/widgets_extensions.dart';
 import '../../../../../common/presentation/widgets/app_text_form_field.dart';
 import '../../../../../common/presentation/widgets/diagonal_border_box.dart';
@@ -29,27 +30,27 @@ class SignUpForm extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const AuthBoxHeader(
-                    title: 'Nice to see you!',
-                    subTitle: 'Create your account to manage your dashboard.',
+                  AuthBoxHeader(
+                    title: context.localizer.niceToSeeYou,
+                    subTitle: context.localizer.createYourAccount,
                   ),
                   14.verticalSpace,
-                  const AppTextFormField(
-                    hintText: "Your full name",
+                  AppTextFormField(
+                    hintText: context.localizer.yourFullName,
                     errorText: "",
-                    header: "Name",
+                    header: context.localizer.name,
                   ),
                   14.verticalSpace,
-                  const AppTextFormField(
-                    hintText: "Your email address",
+                  AppTextFormField(
+                    hintText: context.localizer.yourEmailAddress,
                     errorText: "",
-                    header: "Email",
+                    header: context.localizer.email,
                   ),
                   14.verticalSpace,
-                  const AppTextFormField(
-                    hintText: "Your password",
+                  AppTextFormField(
+                    hintText: context.localizer.yourPassword,
                     errorText: "",
-                    header: "Password",
+                    header: context.localizer.password,
                   ),
                   6.verticalSpace,
                   Row(
@@ -59,7 +60,7 @@ class SignUpForm extends StatelessWidget {
                         onChanged: (value) {},
                       ),
                       Text(
-                        "Remember me",
+                        context.localizer.rememberMe,
                         style: context.textTheme.labelMedium?.copyWith(
                           color: Colors.white,
                         ),
@@ -76,7 +77,7 @@ class SignUpForm extends StatelessWidget {
                     ),
                     onPressed: () {},
                     child: Text(
-                      "SIGN UP",
+                      context.localizer.signUp,
                       style: context.textTheme.labelMedium?.copyWith(
                         color: Colors.white,
                       ),
@@ -85,13 +86,13 @@ class SignUpForm extends StatelessWidget {
                   14.verticalSpace,
                   RichText(
                     text: TextSpan(
-                      text: "Already have an account? ",
+                      text: context.localizer.alreadyHaveAnAccount,
                       style: context.textTheme.labelMedium?.copyWith(
                         color: Colors.grey,
                       ),
                       children: [
                         TextSpan(
-                          text: "Sign In",
+                          text: context.localizer.signIn,
                           style: context.textTheme.labelMedium?.copyWith(
                             color: Colors.white,
                           ),

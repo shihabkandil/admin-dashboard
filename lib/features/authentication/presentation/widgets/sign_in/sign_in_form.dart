@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../common/constants/theme/app_theme_data.dart';
+import '../../../../../common/extensions/context_extensions.dart';
 import '../../../../../common/extensions/widgets_extensions.dart';
 import '../../../../../common/presentation/widgets/app_text_form_field.dart';
 import '../../../../../common/presentation/widgets/diagonal_border_box.dart';
@@ -30,21 +31,21 @@ class SignInForm extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    const AuthBoxHeader(
-                      title: 'Welcome back !',
-                      subTitle: 'Enter your email & password to continue.',
+                    AuthBoxHeader(
+                      title: context.localizer.welcomeBack,
+                      subTitle: context.localizer.enterEmailAndPassword,
                     ),
                     14.verticalSpace,
-                    const AppTextFormField(
-                      hintText: "Your email address",
+                    AppTextFormField(
+                      hintText: context.localizer.yourEmailAddress,
                       errorText: "",
-                      header: "Email",
+                      header: context.localizer.email,
                     ),
                     14.verticalSpace,
-                    const AppTextFormField(
-                      hintText: "Your password",
+                    AppTextFormField(
+                      hintText: context.localizer.yourPassword,
                       errorText: "",
-                      header: "Password",
+                      header: context.localizer.password,
                     ),
                     14.verticalSpace,
                     Row(
@@ -54,7 +55,7 @@ class SignInForm extends StatelessWidget {
                           onChanged: (value) {},
                         ),
                         Text(
-                          "Remember me",
+                          context.localizer.rememberMe,
                           style: context.textTheme.labelMedium?.copyWith(
                             color: Colors.white,
                           ),

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../../common/extensions/widgets_extensions.dart';
 import '../../../../common/constants/theme/app_theme_data.dart';
+import '../../../../common/extensions/context_extensions.dart';
+import '../../../../common/extensions/widgets_extensions.dart';
 import '../../../../gen/assets.gen.dart';
 import 'auth_animated_switcher.dart';
 
@@ -21,12 +22,12 @@ class AuthWideBody extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "INSPIRED BY THE FUTURE:",
+                    context.localizer.inspiredByTheFuture,
                     style: context.textTheme.headlineSmall,
                     textAlign: TextAlign.center,
                   ),
                   Text(
-                    "THE VISION UI DASHBOARD",
+                    context.localizer.theVisionUiDashboard,
                     style: context.textTheme.headlineLarge,
                     textAlign: TextAlign.center,
                   ),
@@ -47,11 +48,11 @@ class AuthWideBody extends StatelessWidget {
                   12.verticalSpace,
                   const Spacer(),
                   Text(
-                    "Designed by Simmmple & Creative Tim",
+                    context.localizer.designedBySimmmple,
                     style: context.textTheme.bodySmall,
                   ),
                   Text(
-                    "@2024, Developed by Shihab Kandil",
+                    context.localizer.developedByShihabKandil,
                     style: context.textTheme.bodySmall?.copyWith(
                       color: Colors.blue,
                     ),

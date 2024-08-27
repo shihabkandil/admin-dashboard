@@ -1,6 +1,22 @@
 {
-  "inspiredByTheFuture": "INSPIRED BY THE FUTURE:",
-  "theVisionUiDashboard": "THE VISION UI DASHBOARD",
+  "alreadyHaveAnAccount": "Already have an account? ",
+  "createYourAccount": "Create your account to manage your dashboard.",
   "designedBySimmmple": "Designed by Simmmple & Creative Tim",
-  "developedByShihabKandil": "@2024, Developed by Shihab Kandil"
+  "developedByShihabKandil": "@2024, Developed by Shihab Kandil",
+  "dontHaveAnAccount": "Don't have an account? ",
+  "email": "Email",
+  "enterEmailAndPassword": "Enter your email & password to continue.",
+  "inspiredByTheFuture": "INSPIRED BY THE FUTURE:",
+  "name": "Name",
+  "niceToSeeYou": "Nice to see you!",
+  "password": "Password",
+  "rememberMe": "Remember me",
+  "signIn": "Sign In",
+  "signUp": "SIGN UP",
+  "signUpNow": "Sign Up Now!",
+  "theVisionUiDashboard": "THE VISION UI DASHBOARD",
+  "welcomeBack": "Welcome back!",
+  "yourEmailAddress": "Your email address",
+  "yourFullName": "Your full name",
+  "yourPassword": "Your password"
 }
