@@ -55,5 +55,7 @@ app.*.map.json
 /lib/common/core/injector/locator.config.dart
 /lib/gen/assets.gen.dart
 
+# Localization related
+/lib/l10n/generated/
 
 pubspec.lock
