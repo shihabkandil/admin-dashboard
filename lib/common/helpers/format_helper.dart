@@ -5,6 +5,6 @@ class FormatHelper {
     if (percentage == 0) {
       return "$percentage%";
     }
-    return percentage > 0 ? "+$percentage%" : "-$percentage%";
+    return percentage > 0 ? "+$percentage%" : "$percentage%";
   }
 }

@@ -17,7 +17,7 @@ void main() {
 
     expect(
       FormatHelper.formatPercentage(negativePercent),
-      "-$negativePercent%",
+      "$negativePercent%",
     );
   });
 }
