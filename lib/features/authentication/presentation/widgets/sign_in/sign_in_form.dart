@@ -1,10 +1,12 @@
 import 'dart:ui';
 
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../common/constants/theme/app_theme_data.dart';
+import '../../../../../common/core/router/app_router.gr.dart';
 import '../../../../../common/extensions/context_extensions.dart';
 import '../../../../../common/extensions/widgets_extensions.dart';
 import '../../../../../common/presentation/widgets/app_text_form_field.dart';
@@ -70,7 +72,9 @@ class SignInForm extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),
                       ),
-                      onPressed: () {},
+                      onPressed: () => context.navigateTo(
+                        const DashboardRoute(),
+                      ),
                       child: Text(
                         "SIGN IN",
                         style: context.textTheme.labelMedium?.copyWith(

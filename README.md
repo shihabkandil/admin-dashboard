@@ -33,4 +33,10 @@ Follow these steps to get started with the Flutter Template Application:
     flutter run
     ```
 
-5. **Explore and Enjoy!**: Start exploring and building your Flutter Application.
+5. **Run tests**: Run unit & widget tests.
+
+    ```bash
+    flutter test
+    ```
+
+6. **Explore and Enjoy!**: Start exploring and building your Flutter Application.
