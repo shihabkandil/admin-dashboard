@@ -15,6 +15,7 @@ class HeaderCardsList extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         child: Row(
           children: [
+            22.horizontalSpace,
             HeaderAnalyticsCard(
               title: context.localizer.todaysMoney,
               percentage: 55,

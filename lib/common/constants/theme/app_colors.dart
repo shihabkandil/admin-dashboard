@@ -15,6 +15,7 @@ class AppColors {
   static const Color onSurfaceColor = Color(0xFFFFFFFF);
   static const Color onErrorColor = Color(0xFFFFFFFF);
   static const Color cardBackgroundColor = Color(0xFFFEFBE5);
+  static const Color blue = Color(0xFF206BFF);
   static const List<Color> backgroundColors = [
     Color(0xff0F123B),
     Color(0xff090D2E),

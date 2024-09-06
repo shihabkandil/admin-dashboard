@@ -22,7 +22,7 @@ class HeaderAnalyticsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 380,
+      width: 300,
       child: DecoratedBox(
         decoration: BoxDecoration(
             gradient: const LinearGradient(
@@ -40,6 +40,7 @@ class HeaderAnalyticsCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     title,
@@ -54,7 +55,7 @@ class HeaderAnalyticsCard extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
-                      12.horizontalSpace,
+                      6.horizontalSpace,
                       Text(
                         FormatHelper.formatPercentage(percentage),
                         style: context.textTheme.labelMedium?.copyWith(
