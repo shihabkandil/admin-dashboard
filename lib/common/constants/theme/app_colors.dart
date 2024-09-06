@@ -23,4 +23,5 @@ class AppColors {
   ];
 
   static const Color black = Colors.black;
+  static const Color grayishBlue = Color(0xFFA0AEC0);
 }

@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:admin_dashboard/features/dashboard/presentation/widgets/welcome_card.dart';
 import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 
@@ -32,6 +33,8 @@ class DashboardScreen extends StatelessWidget {
               children: [
                 20.verticalSpace,
                 const HeaderCardsList(),
+                20.verticalSpace,
+                const WelcomeCard(name: 'Anonymous')
               ],
             ),
           ),
