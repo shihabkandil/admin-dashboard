@@ -3,5 +3,5 @@ class Constants {
 
   static const String devFlavorAbbreviation = "Dev";
 
-  static const int wideScreenBreakpointPixels = 600;
+  static const int wideScreenBreakpointPixels = 800;
 }
