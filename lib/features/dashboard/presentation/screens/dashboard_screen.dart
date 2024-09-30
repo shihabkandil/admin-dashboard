@@ -1,11 +1,11 @@
 import 'dart:ui';
 
-import 'package:admin_dashboard/features/dashboard/presentation/widgets/welcome_card.dart';
 import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../common/constants/theme/app_colors.dart';
 import '../../../../common/extensions/widgets_extensions.dart';
+import '../widgets/dashboard_cards.dart';
 import '../widgets/header_cards_list.dart';
 
 @RoutePage()
@@ -33,14 +33,16 @@ class DashboardScreen extends StatelessWidget {
                   sigmaX: 300,
                   tileMode: TileMode.repeated,
                 ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    20.verticalSpace,
-                    const HeaderCardsList(),
-                    20.verticalSpace,
-                    const WelcomeCard(name: 'Shihab Kandil')
-                  ],
+                child: SingleChildScrollView(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      20.verticalSpace,
+                      const HeaderCardsList(),
+                      20.verticalSpace,
+                      const DashboardCards(),
+                    ],
+                  ),
                 ),
               ),
             ],

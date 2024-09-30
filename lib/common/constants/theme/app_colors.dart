@@ -22,6 +22,13 @@ class AppColors {
     Color(0xff020515),
   ];
 
+  static const gradientCardColors = [
+    primaryColor,
+    Color(0x760a0e23),
+  ];
+
+  static const navyBlue = Color(0xff22234B);
+
   static const Color black = Colors.black;
   static const Color grayishBlue = Color(0xFFA0AEC0);
 }
