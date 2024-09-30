@@ -1,5 +1,5 @@
 import 'package:injectable/injectable.dart';
-import 'package:internet_connection_checker/internet_connection_checker.dart';
+import 'package:internet_connection_checker_plus/internet_connection_checker_plus.dart';
 
 import 'i_internet_checker.dart';
 
@@ -7,7 +7,6 @@ import 'i_internet_checker.dart';
 class InternetChecker implements IInternetChecker {
   @override
   Future<bool> isConnected() async {
-    var isConnected = await InternetConnectionChecker().hasConnection;
-    return isConnected;
+    return await InternetConnection().hasInternetAccess;
   }
 }
