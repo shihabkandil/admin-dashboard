@@ -22,7 +22,6 @@ class HeaderAnalyticsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 300,
       child: DecoratedBox(
         decoration: BoxDecoration(
             gradient: const LinearGradient(
@@ -66,6 +65,7 @@ class HeaderAnalyticsCard extends StatelessWidget {
                   )
                 ],
               ),
+              const SizedBox(width: 32),
               DecoratedBox(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
